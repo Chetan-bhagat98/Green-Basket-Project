@@ -1,0 +1,494 @@
+/* *************LOADING**************** */
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff url("https://i.pinimg.com/originals/45/12/4d/45124d126d0f0b6d8f5c4d635d466246.gif")
+    no-repeat center;
+    z-index: 999999;
+}
+/* *************LOADING**************** */
+#slidshow {
+    /* margin-top: 20px; */
+    width: 100%;
+}
+
+#sliddetails {
+    display: flex;
+    width: 35%;
+    margin: auto;
+    justify-content: space-between;
+    background-color: white;
+    /* opacity: 0.7; */
+    position: relative;
+    bottom: 80px;
+    padding: 0 12px 0 12px;
+
+}
+
+#sliddetails>section {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    opacity: 0.5;
+    height: 78px;
+    border-bottom: 5px solid rgb(76, 142, 43);
+
+}
+
+#middivs {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    gap: 15px;
+    margin: auto;
+}
+
+#middivs>div {
+    display: flex;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    font-size: 10px;
+    background-color: rgb(238, 234, 229);
+    /* padding: 10px; */
+    text-align: center;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+#middivs>div>h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin: 8px 10px 8px 10px;
+
+}
+
+.heading1 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-weight: -200; */
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.heading2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-weight: -200; */
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+#renderdata,
+#renderdata2 {
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    gap: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#renderdata>div,
+#renderdata2>div {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 10px
+}
+
+#renderdata>div>img,
+#renderdata2>div>img {
+    width: 85%;
+    margin: auto;
+}
+
+.render1 {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -15px;
+}
+
+#markprice {
+    color: grey;
+    font-size: 14px;
+}
+
+.category {
+    color: rgb(112, 105, 105);
+    font-size: 14px;
+    margin-top: -12px;
+}
+
+.mrp {
+    text-decoration: line-through;
+    color: rgb(201, 43, 43);
+}
+
+.render2 {
+    width: 86%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.render2>i {
+    color: grey;
+    font-size: 12px;
+}
+
+.render2>button {
+    background-color: orange;
+    border: 0ch;
+    border-radius: 5px;
+    width: 120px;
+    margin-left: 10px;
+}
+
+.render2>button:hover {
+    color: white
+}
+
+#delivery {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 3px;
+}
+
+#brandstore {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+#brandstore>div {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#brandstore>div:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#brandstore>div>img {
+    width: 100%;
+    height: 100%;
+}
+
+
+#category {
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 300px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+
+
+}
+
+#category>div {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 8px;
+    background-color: white;
+
+}
+
+#category>div:hover {
+    background-color: rgb(222, 216, 216);
+
+}
+
+#category>div>a {
+    text-decoration: none;
+    color: black;
+}
+
+#bank,
+#bank2 {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+
+}
+
+#bank>div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#bank img {
+    margin: 3px;
+}
+
+.final {
+    width: 270px;
+    height: 180px;
+}
+
+#bank2 img {
+    width: 220px;
+    margin: 3px;
+}
+
+
+#middivs>div:nth-child(2) {
+    background-color: white;
+}
+
+.mediaquery1 ,mediaquery2{
+    display: none;
+}
+
+
+
+@media (min-width: 440px) and (max-width: 825px) {
+    a {
+        text-decoration: none;
+    }
+
+    #mediaqueryfortab input {
+        width: 100%;
+        height: 35px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    #sliddetails {
+        display: none;
+    }
+
+    #middivs {
+        justify-content: space-between;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #middivs>div {
+        border-radius: 5px;
+        margin-top: 20px;
+        align-items: center;
+    }
+
+    #middivs>div>h1 {
+        font-size: 14px;
+
+    }
+    #middivs>div:nth-child(4),
+    #middivs>div:nth-child(5),
+    #middivs>div:nth-child(6) {
+        display: none;
+    }
+
+    #renderdata>div:nth-child(5) {
+        display: none;
+    }
+
+    #renderdata,
+    #renderdata2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin: auto;
+    }
+
+    #renderdata>div,
+    #renderdata2>div {
+        padding: 15px
+    }
+
+    #renderdata>div>img,
+    #renderdata2>div>img {
+        width: 65%;
+        height: 45%;
+
+    }
+
+    #bank {
+        margin-top: 20px;
+    }
+
+    #bank>div:nth-child(1) {
+        display: none;
+    }
+
+    #bank>div:nth-child(2) {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #bank>div:nth-child(2)>a>img {
+        width: 97%;
+        height: 98%;
+        margin-top: 10px;
+    }
+
+    #bank2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+    }
+
+    #bank2>a:nth-child(5) {
+        display: none;
+
+    }
+
+    #bank2 img {
+        width: 98%;
+        height: 90%;
+    }
+
+    #brandstore {
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    /* #footer {
+    border: 2px solid firebrick;
+} */
+
+
+
+}
+
+@media (min-width: 0px) and (max-width: 440px) {
+
+
+    #sliddetails {
+        display: none;
+    }
+
+    #middivs {
+        display: none;
+    }
+
+    .heading1 {
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 550;
+        color: rgb(79, 83, 79);
+        font-size: 22px;
+        margin-top: 20px;
+    }
+
+    #renderdata>div:nth-child(5) {
+        display: none;
+    }
+
+    #renderdata,
+    #renderdata2 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    #renderdata>div,
+    #renderdata2>div {
+        padding: 10px;
+        width: 40%;
+    }
+
+    #renderdata>div>img,
+    #renderdata2>div>img {
+        width: 65%;
+        height: 45%;
+
+    }
+
+    #bank {
+        margin-top: 20px;
+
+    }
+
+    #bank>div:nth-child(1) {
+        display: none;
+    }
+
+    #bank>div:nth-child(2) {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #bank>div:nth-child(2)>a>img {
+        width: 97%;
+        height: 98%;
+        margin-top: 10px;
+    }
+
+    #bank2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+    }
+
+    #bank2>a:nth-child(5) {
+        display: none;
+
+    }
+
+    #bank2 img {
+        width: 98%;
+        height: 90%;
+    }
+
+    #brandstore {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 15px;
+        margin-bottom: 30px;
+
+    }
+
+    .render1 {
+        margin-top: -25px;
+        width: 98%;
+        height: 40px;
+        margin-bottom: 5px;
+    }
+
+    .render2 {
+        width: 100%;
+        margin-top: -10px;
+    }
+
+    .render2>i {
+        font-size: 10px;
+    }
+    .price{
+        font-size: 14px;
+    }
+    .render2>button {
+        width: 90px;
+        font-size: 10px;
+        padding: 0%;
+    }
+    #item>h4{
+        font-size: 13px;
+    }
+    .mrp{
+        font-size: 13px;
+    }
+    .category {
+        color: rgb(112, 105, 105);
+        font-size: 13px;
+        margin-top: -12px;
+
+    }
+    #slidshow {
+        width: 100%;
+        height: 200px;
+
+    }
+   
+}
